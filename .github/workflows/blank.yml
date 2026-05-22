@@ -17,6 +17,10 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
         
+      # QUESTA È LA RIGA CHE AGGIUNGE IL PERMESSO
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+        
       - name: Build with Gradle
         run: ./gradlew assembleDebug
 
