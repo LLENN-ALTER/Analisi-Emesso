@@ -21,7 +21,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1" // Assicurati sia compatibile con Kotlin
+        kotlinCompilerExtensionVersion = "1.4.3" // Assicurati sia compatibile con Kotlin
     }
 
     compileOptions {
