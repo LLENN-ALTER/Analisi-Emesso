@@ -5,17 +5,26 @@ plugins {
 }
 
 android {
-    namespace = "com.esempio.analisiemesso"
+    namespace = "com.aistudio.shiftcalendar.uydzwt"
     compileSdk = 34
+
     defaultConfig { 
-        applicationId = "com.esempio.analisiemesso"
+        applicationId = "com.aistudio.shiftcalendar.uydzwt"
         minSdk = 26
         targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    
+    kotlinOptions {
+        jvmTarget = "17"
     }
 }
-
-// Forza Gradle ad accettare le licenze durante la sincronizzazione
-System.setProperty("android.sdk.licenses.accepted", "true")
 
 dependencies {
     implementation("com.google.firebase:firebase-auth-ktx:22.3.1")
