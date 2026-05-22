@@ -23,6 +23,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
+import androidx.compose.material3.HorizontalDivider
 
 enum class ShiftType { CONTROLLERIA, BIGLIETTERIA_ORIO, RIPOSO, FERIE }
 
