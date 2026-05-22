@@ -128,10 +128,23 @@ class ShiftViewModel : ViewModel() {
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
         setContent {
-            val viewModel: ShiftViewModel = viewModel()
-            val isLoggedIn by viewModel.isUserLoggedIn.collectAsState()
-            if (isLoggedIn) ShiftCalendarScreen(viewModel) else LoginScreen(viewModel)
+            MaterialTheme {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
+                    val viewModel: ShiftViewModel = viewModel()
+                    val isLoggedIn by viewModel.isUserLoggedIn.collectAsState()
+                    
+                    if (isLoggedIn) {
+                        ShiftCalendarScreen(viewModel)
+                    } else {
+                        LoginScreen(viewModel)
+                    }
+                }
+            }
         }
     }
 }
