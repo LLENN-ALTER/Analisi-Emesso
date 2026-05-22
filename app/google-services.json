@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "491944675890",
+    "project_id": "analisi-emesso",
+    "storage_bucket": "analisi-emesso.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491944675890:android:f80b9fa400c8c83c530a2b",
+        "android_client_info": {
+          "package_name": "com.aistudio.shiftcalendar.uydzwt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY9lyZPMCnnio2_Aedodg_5CKezr-dYTU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
