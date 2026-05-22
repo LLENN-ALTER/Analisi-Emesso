@@ -7,7 +7,7 @@
     <application
         android:allowBackup="true"
         android:label="Shift Calendar"
-        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        android:theme="@style/Theme.ShiftCalendar">
         
         <activity
             android:name=".MainActivity"
